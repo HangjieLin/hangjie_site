@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Research | Hangjie Lin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Hangjie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seminars.html">Talks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="background-image: url('img/research_bg.png'); height: 40vh;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-5">Research</h1>
+            <p class="lead">Salt marsh resilience&nbsp;| Remote‑sensing bias&nbsp;| SSC trends&nbsp;| Tidal flats evolution</p>
+        </div>
+    </section>
+
+    <!-- Image Modals -->
+    <div class="modal fade" id="modalSaltmarsh" tabindex="-1" aria-labelledby="modalSaltmarshLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="img/saltmarsh_resilience.jpg" class="img-fluid" alt="Salt marsh resilience full view">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSSCbias" tabindex="-1" aria-labelledby="modalSSCbiasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="img/ssc_bias.jpg" class="img-fluid" alt="SSC and chlorophyll-a bias full view">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSSCtrend" tabindex="-1" aria-labelledby="modalSSCtrendLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="img/ssc_trend.jpg" class="img-fluid" alt="SSC trends full view">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTidalFlats" tabindex="-1" aria-labelledby="modalTidalFlatsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="img/tidal_flats_evolution.jpg" class="img-fluid" alt="Tidal flats evolution full view">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Content -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Research Highlights</h2>
+            <div class="row">
+                <!-- Salt Marsh Resilience -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="research-card">
+                        <img src="img/saltmarsh_resilience.jpg" alt="Salt marsh resilience" data-bs-toggle="modal" data-bs-target="#modalSaltmarsh" style="cursor:pointer;" />
+                        <div class="research-card-body">
+                            <h3 class="research-card-title">Salt Marsh Resilience</h3>
+                            <p class="research-card-text">Salt marshes provide essential ecosystem services and act as natural buffers. I fuse in‑situ measurements, satellite imagery and meteorological data to quantify net sediment fluxes and evaluate pathways of marsh resilience and vulnerability under climate change.</p>
+                            <ul>
+                                <li>Fusing USGS, Sentinel‑2/Landsat and wind/wave data to estimate net sediment flux</li>
+                                <li>Compiling global marsh change and hydrodynamic drivers datasets</li>
+                                <li>Developing multi‑indicator resilience/vulnerability frameworks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSC/Chlorophyll‑a Bias -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="research-card">
+                        <img src="img/ssc_bias.jpg" alt="Remote‑sensing sampling bias" data-bs-toggle="modal" data-bs-target="#modalSSCbias" style="cursor:pointer;" />
+                        <div class="research-card-body">
+                            <h3 class="research-card-title">SSC &amp; Chlorophyll‑a Bias</h3>
+                            <p class="research-card-text">Satellite observations suffer from sampling gaps and survivorship bias. I design controlled experiments and spatiotemporal machine‑learning models to quantify and correct biases in suspended‑sediment and chlorophyll retrievals.</p>
+                            <ul>
+                                <li>Quantifying survivorship bias using full vs satellite‑masked datasets</li>
+                                <li>Training ConvLSTM/3D U‑Net models to reconstruct bias‑reduced fields</li>
+                                <li>Mapping uncertainty as a function of sampling gaps and seasonality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSC Trends in U.S. Coast -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="research-card">
+                        <img src="img/ssc_trend.jpg" alt="SSC trends in U.S. coast" data-bs-toggle="modal" data-bs-target="#modalSSCtrend" style="cursor:pointer;" />
+                        <div class="research-card-body">
+                            <h3 class="research-card-title">SSC Trends in U.S. Coast</h3>
+                            <p class="research-card-text">The suspended‑sediment climate of U.S. East Coast lagoons and bays is changing. I build a harmonised multi‑decadal record of SSC proxies to reveal trends, separate inner‑bay and shelf signals and identify the drivers behind observed changes.</p>
+                            <ul>
+                                <li>Harmonising 1984–2024 SSC proxy records across barrier‑island systems</li>
+                                <li>Separating inner‑bay versus shelf contributions</li>
+                                <li>Attributing trends to wave climate, inlet morphology, dredging, sea‑level rise and watershed loads</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tidal Flats Evolution -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="research-card">
+                        <img src="img/tidal_flats_evolution.jpg" alt="Tidal flats evolution" data-bs-toggle="modal" data-bs-target="#modalTidalFlats" style="cursor:pointer;" />
+                        <div class="research-card-body">
+                            <h3 class="research-card-title">Tidal Flats Evolution</h3>
+                            <p class="research-card-text">Coastal engineering and changing boundary conditions modify wave and sediment dynamics. Through numerical experiments I investigate how seawalls and reclamation projects force the evolution of tidal flats and alter their equilibrium profiles.</p>
+                            <ul>
+                                <li>Simulating hydrodynamic and sediment responses to seawalls</li>
+                                <li>Characterising equilibrium profile adjustments under altered forcing</li>
+                                <li>Exploring interactions between tidal flats and engineered structures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hangjie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
