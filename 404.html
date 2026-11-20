@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found, Hangjie Lin</title>
+<meta name="robots" content="noindex">
+<!-- Paths are absolute because this page can be served from any URL.
+     If you rename the repository, change /hangjie_site/ below. -->
+<link rel="icon" href="/hangjie_site/assets/img/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Newsreader"; src: url("/hangjie_site/assets/fonts/Newsreader.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+  @font-face { font-family: "Geologica"; src: url("/hangjie_site/assets/fonts/Geologica.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+  :root { --paper:#F3F4F1; --ink:#17282E; --ink-2:#4B5D63; --sea:#D2E1E5; --line:#6C97AB; --tide:#1E5A77; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#11202A; --ink:#E2E9E7; --ink-2:#A6B6BA; --sea:#173645; --line:#4F8BA6; --tide:#8CC3DA; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; grid-template-rows: 1fr auto;
+    background: var(--paper); color: var(--ink);
+    font-family: "Newsreader", Georgia, serif; font-size: 1.1875rem; line-height: 1.6;
+  }
+  main { align-self: end; max-width: 1240px; width: 100%; margin: 0 auto; padding: 0 clamp(20px, 4.2vw, 56px) 40px; }
+  h1 { font-weight: 300; font-size: clamp(3rem, 9vw, 7rem); line-height: 1; letter-spacing: -0.025em; margin: 0 0 18px; font-variation-settings: "opsz" 72; }
+  p { max-width: 34rem; margin: 0 0 1em; color: var(--ink-2); }
+  a { color: var(--tide); text-underline-offset: .2em; text-decoration-thickness: 1px; font-family: "Geologica", system-ui, sans-serif; font-size: .9375rem; }
+  a:hover { text-decoration-style: wavy; }
+  .sea { position: relative; height: 34vh; background: var(--sea); }
+  .sea svg { position: absolute; left: 0; top: -14px; width: 100%; height: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Lost to erosion.</h1>
+  <p>Whatever stood at this address has washed away. Sediment budgets don’t always close.</p>
+  <p><a href="/hangjie_site/">Back to the home page</a></p>
+</main>
+<div class="sea" aria-hidden="true">
+  <svg viewBox="0 0 1200 15" preserveAspectRatio="none">
+    <path d="M0 8 C 100 0 200 0 300 8 S 500 16 600 8 S 800 0 900 8 S 1100 16 1200 8 V15 H0 Z" fill="var(--sea)"/>
+    <path d="M0 8 C 100 0 200 0 300 8 S 500 16 600 8 S 800 0 900 8 S 1100 16 1200 8" fill="none" stroke="var(--line)" stroke-width="1" vector-effect="non-scaling-stroke"/>
+  </svg>
+</div>
+</body>
+</html>
